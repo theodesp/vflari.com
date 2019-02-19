@@ -1,0 +1,14 @@
+routes:
+
+collections:
+  /poems/:
+      permalink: /poems/{slug}/
+      filter: 'tag:poems'
+  /:
+    permalink: /category/{slug}/
+    template:
+      - index
+
+taxonomies:
+  tag: /category/{slug}/
+  author: /author/{slug}/
